@@ -3,11 +3,11 @@
 ## quick start
 
 ```bash
-docker run --rm -d -p 8080:8080/tcp -p 8081:8081/tcp fengqi5866/mitmproxy-jsondump:20220520
+docker run --rm -d -p 8888:8888/tcp fengqi5866/mitmproxy-jsondump:20220520
 ```
 or
 ```bash
-docker run --rm -d -v ~/.mitmproxy:/home/mitmproxy/.mitmproxy -p 8080:8080/tcp -p 8081:8081/tcp fengqi5866/mitmproxy-jsondump:20220520
+docker run --rm -d -v ~/.mitmproxy:/home/mitmproxy/.mitmproxy -p 8888:8888/tcp fengqi5866/mitmproxy-jsondump:20220520
 ```
 
 ## code
@@ -22,5 +22,5 @@ copy your mitmproxy ca into mitmproxy-ca folder
 ```bash
 docker build -t your-tag --no-cache . 
 docker push your-tag
-docker run --rm -d -p 8080:8080/tcp -p 8081:8081/tcp your-tag
+docker run --rm -d -p 8888:8888/tcp your-tag
 ```
