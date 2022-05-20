@@ -2,6 +2,13 @@
 
 ## quick start
 
+| param                 | value                  |
+|-----------------------|------------------------|
+| ELASTICSEARCH_URL     | elasticsearch url      |
+| ELASTICSEARCH_USERNAME | elasticsearch username |
+| ELASTICSEARCH_PASSWORD | elasticsearch password |
+| TRACE_ID              | trace id               |
+
 ```bash
 docker run --rm -d -p 8888:8888/tcp fengqi5866/mitmproxy-jsondump:20220520
 ```
