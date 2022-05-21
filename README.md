@@ -2,28 +2,30 @@
 
 ## quick start
 
-| param                 | value                  |
-|-----------------------|------------------------|
-| ELASTICSEARCH_URL     | elasticsearch url      |
+| param                  | value                  |
+|------------------------|------------------------|
+| ELASTICSEARCH_URL      | elasticsearch url      |
 | ELASTICSEARCH_USERNAME | elasticsearch username |
 | ELASTICSEARCH_PASSWORD | elasticsearch password |
-| TRACE_ID              | header trace id tag    |
+| TRACE_ID               | header trace id tag    |
 
 ```bash
 docker run -d -it \
 -e ELASTICSEARCH_URL=http://localhost:9200/mitm_log/_doc \
 -e ELASTICSEARCH_USERNAME=elastic \
 -e ELASTICSEARCH_PASSWORD=password \
--p 8888:8888/tcp fengqi5866/mitmproxy-jsondump:20220520
+-p 8888:8888/tcp fengqi5866/mitmproxy-jsondump:20220521
 ```
+
 or
+
 ```bash
 docker run -d -it \
 -v ~/.mitmproxy:/home/mitmproxy/.mitmproxy \
 -e ELASTICSEARCH_URL=http://localhost:9200/mitm_log/_doc \
 -e ELASTICSEARCH_USERNAME=elastic \
 -e ELASTICSEARCH_PASSWORD=password \
--p 8888:8888/tcp fengqi5866/mitmproxy-jsondump:20220520
+-p 8888:8888/tcp fengqi5866/mitmproxy-jsondump:20220521
 ```
 
 ## code
